@@ -15,14 +15,21 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomATLAQuote() {
+  const quotes =
+      ['"Appa, yip yip!" - Aang', 
+      '"That\'s rough, buddy." - Prince Zuko', 
+      '"My own mother thought I was a monster. She was right of course, but it still hurt." - Princess Azula', 
+      '"When we hit our lowest point, we are open to the greatest change." - Aang', 
+      '"It is important to draw wisdom from different places. If you take it only from one place it becomes stale and rigid." - Uncle Iroh',
+      '"Love is brightest in the dark." - Katara',
+      '"My cabbages!" - Cabbage Merchant'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random quote.
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const quoteContainer = document.getElementById('quote-container');
+  quoteContainer.innerText = quote;
+
 }
