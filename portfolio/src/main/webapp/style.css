@@ -8,6 +8,8 @@
   margin-top: 20px;
 }
 
+/* Create custom button design */
+
 .button {
     background-color: rgba(77, 44, 138, 1);
     border: rgba(52, 26, 101, 1);
@@ -16,6 +18,18 @@
     display: inline-block;
     font-family: Verdana;
     font-size:20px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.button-2 {
+    background-color: rgba(77, 44, 138, 1);
+    border: rgba(52, 26, 101, 1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size:14px;
     padding: 15px 25px;
     text-align: center;
 }
@@ -70,8 +84,38 @@ img {
     border-color: lightslategray;
 }
 
+/* From W3 Schools - How to create a Navigation Bar using lists */
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    display: block;
+    font-family: Verdana;
+    font-size:20px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(52, 26, 101, 1);
+}
+
 /* Change font for entire page */
 
 span {
     font-family: Verdana;
+}
+
+/* From W3 Schools - How to create a Navigation Bar using lists */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(77, 44, 138, 1);
 }
