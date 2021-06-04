@@ -8,6 +8,18 @@
   margin-top: 20px;
 }
 
+.button {
+    background-color: rgba(77, 44, 138, 1);
+    border: rgba(52, 26, 101, 1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size:20px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
 /* From W3 Schools - Create columns and rows to more easily format elements on page */
 /* Column-main is for main page and Column-photo is for image gallery page */
 
