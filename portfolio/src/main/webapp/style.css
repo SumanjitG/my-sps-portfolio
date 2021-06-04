@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+#song-container {
+  margin-top: 20px;
+}
+
 /* Create custom button design */
 
 .button {
@@ -53,6 +57,11 @@
     width: 33.33%;
 }
 
+.column-photo img {
+    height: 120px;
+    width: 150px;
+}
+
 /* Create a card class for stylizing organized elements */
 
 .card {
@@ -66,19 +75,23 @@
     padding: 4px 16px;
 }
 
+/* Resize img photos with proportionality */
+
+.img {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+}
+
 /* Background color for entire page */
 
 body {
     background-color: rgba(154, 207, 207, 1);
 }
 
-/* Add border around image and resize photos while maintaining proportions */
+/* Add border around image */
 
 img {
-    height: auto;
-    width: auto;
-    max-width: 250px;
-
     border-style: solid;
     border-width: 5px;
     border-color: lightslategray;
