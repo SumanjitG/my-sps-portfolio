@@ -6,24 +6,44 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
+  <span>
   <body>
     
     <div id="content" class = "card">
         <div class = "card-body">
-            <h1>Sumanjit Gill</h1>
-            <h3>Welcome!</h3>
-            <img src="/images/SGHeadshot.jpeg" alt = "Sumanjit Gill"/>
+            <h1>Welcome to my Portfolio!</h1>
+            <h3>About Me:</h3>
 
-            <p>
-                <b>About Me:</b> 
-                <br>
-                My name is Sumanjit Gill and I am a third-year Computer Engineering student attending CSU Fresno.
-            </p> 
-            
+            <div class = "row">
+                <div class = "column-main">
+                    <img src="/images/SG.jpeg" alt = "Sumanjit Gill"/>
+                </div>
+                <div class = "column-main">
+                    <p>
+                        My name is Sumanjit Gill and I am a third-year Computer Engineering student attending CSU Fresno. 
+                        <br>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class = "row">
+                <h3>Projects</h3>
+                <p>This section lists the projects I have been involved with.</p>
+                <div class = "column-main">
+                    <h5>Research</h5>
+                </div>
+
+                <div class = "column-main">
+                    <h5>Web Applications</h5>
+                </div>
+            </div>
+
             <p>Click below for a quote from <i>Avatar: The Last Airbender!</i></p>
             <button onclick="addRandomATLAQuote()">Quote Me!</button>
             <div id="quote-container"></div>
+
         </div>
     </div>
   </body> 
+</span>
 </html>

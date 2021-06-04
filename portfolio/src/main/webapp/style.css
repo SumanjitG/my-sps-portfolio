@@ -8,16 +8,26 @@
   margin-top: 20px;
 }
 
+/* From W3 Schools - Create columns and rows to more easily format elements on page */
+/* Column-main is for main page and Column-photo is for image gallery page */
 
-
-img {
-    height: 250px;
-    width: 185px;
-
-    border-style: solid;
-    border-width: 5px;
-    border-color: lightslategray;
+.column-main {
+    float: left;
+    width: 50%;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-photo {
+    float: left;
+    width: 33.33%;
+}
+
+/* Create a card class for stylizing organized elements */
 
 .card {
     background-color: snow;
@@ -30,6 +40,26 @@ img {
     padding: 4px 16px;
 }
 
+/* Background color for entire page */
+
 body {
     background-color: rgba(154, 207, 207, 1);
+}
+
+/* Add border around image and resize photos while maintaining proportions */
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightslategray;
+}
+
+/* Change font for entire page */
+
+span {
+    font-family: Verdana;
 }
