@@ -1,8 +1,8 @@
 /** Fetches a random fact from the server */
 async function showRandomFact() {
-  const responseFromServer = await fetch('/date');
+  const responseFromServer = await fetch('/fact');
   const textFromResponse = await responseFromServer.text();
 
-  const dateContainer = document.getElementById('date-container');
-  dateContainer.innerText = textFromResponse;
+  const factContainer = document.getElementById('fact-container');
+  factContainer.innerText = textFromResponse;
 }
