@@ -21,7 +21,9 @@ public class FactServlet extends HttpServlet {
     facts.add("In 2012, a friend and I built a giant Nintendo DS.");
     facts.add("When I was 5 years old, I tried to do 'gymnastics' at home and broke my right arm.");
     facts.add("I am a big Selena Gomez fan and was lucky enough to see her perform in 2010 and 2016.");  
-    
+    facts.add("I speak three languages: English, Punjabi, and Spanish.");
+    facts.add("For weddings in our family, I choreograph a dance routine that my siblings, cousins, and I perform for a pre-wedding event.");
+
     String json = convertToJson(facts);
     
     response.setContentType("application/json;");
