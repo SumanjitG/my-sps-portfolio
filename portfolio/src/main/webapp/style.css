@@ -83,10 +83,32 @@
     max-width: 250px;
 }
 
+/* Resize images to a small size without a border (logos) */
+
+.logo {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+
+    border-style: none;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
 /* Background color for entire page */
 
 body {
     background-color: rgba(154, 207, 207, 1);
+}
+
+/* Center align forms */
+
+form {
+    margin: 0 auto;
+    width: 300px;
+
+    padding: 20px 20px 40px 20px;
+    
 }
 
 /* Add border around image */
