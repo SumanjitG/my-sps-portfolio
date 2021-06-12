@@ -44,18 +44,18 @@
             <br>
 
             <b><h4>Contact Me:</h4></b>
-            <form action="/form-handler" method="POST">
-                <p>Name</p>
-                <input type = "text" id="name" placeholder="Your Name">
+            <form action="/contact" method="POST">
+                <label for = "name">Name</label>
+                <input type = "text" id="name" name = "name" placeholder="Your Name" required>
                 <br>
-                <p>Email</p>
-                <input type = "text" id="email" placeholder="Your Email">
+                <label for = "email">Email</label>
+                <input type = "text" id="email" name = "email" placeholder="Your Email" required>
                 <br>
-                <p>Message</p>
-                <input type = "text" id="message" placeholder="Your Message">
+                <label for = "message">Message</label>
+                <input type = "text" id="message" name = "message" placeholder="Your Message" required>
                 <br>
                 <br/>
-                <input type="submit" />
+                <input type="submit"/>
             </form>
 
         </div>
