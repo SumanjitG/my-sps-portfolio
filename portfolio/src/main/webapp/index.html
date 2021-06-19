@@ -6,14 +6,81 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
+  <span>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    
+    <div id="content" class = "card">
+        <div class = "card-body">
+
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="facts.html">Facts</a></li>
+                <li><a href="images.html">Gallery</a></li>
+                <li><a href="music.html">Songs</a></li>
+            </ul>
+
+            <h1>Welcome to my Portfolio!</h1>
+            <h3>About Me:</h3>
+
+            <div class = "row">
+                <div class = "column-main">
+                    <img class = "img" src="/images/SG.jpeg" alt = "Sumanjit Gill"/>
+                </div>
+                <div class = "column-main">
+                    <p>
+                        My name is Sumanjit Gill and I am a third-year Computer Engineering student attending CSU Fresno. 
+                        <br>
+                        I enjoy any activity involving creativity, be it drawing, photography, video editing, animation, or programming.
+                    </p>
+                </div>
+            </div>
+
+            <p>Click below for a quote from <i>Avatar: The Last Airbender!</i></p>
+            <button class = "button" onclick="addRandomATLAQuote()">Quote Me!</button>
+            <div id="quote-container"></div>
+
+            <br>
+
+            <div class = "row">
+                <b><h4>Contact Me:</h4></b>
+                    <div class = "column-main">
+                        <form action="/contact" method="POST">
+                            <label for = "name">Name</label>
+                            <br>
+                            <input type = "text" id="name" name = "name" placeholder="Your Name" required>
+                            <br><br>
+
+                            <label for = "email">Email</label>
+                            <br>
+                            <input type = "text" id="email" name = "email" placeholder="Your Email" required>
+                            <br><br>
+
+                            <label for = "message">Message</label>
+                            <br>
+                            <input type = "text" id="message" name = "message" placeholder="Your Message" required>
+                            <br><br>
+                            <br/>
+                            <input type="submit"/>
+                        </form>
+                    </div>
+
+                    <div class = "column-main">
+
+                        <br><br>
+                        
+                        <a href = "https://github.com/SumanjitG/"><img class = "logo" src="/images/git.png" alt = "GitHub"/></a>
+                    
+                        <br><br>
+                    
+                        <a href = "https://www.linkedin.com/in/sumanjit-gill/"><img class = "logo" src="/images/linkedin.png" alt = "LinkedIn"/></a>                
+                    </div>
+                </div>
+
+                <br><br>
+
+        </div>
     </div>
-  </body>
+  </body> 
+</span>
 </html>

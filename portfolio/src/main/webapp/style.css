@@ -4,6 +4,153 @@
   width: 650px;
 }
 
-#greeting-container {
+#quote-container {
   margin-top: 20px;
+}
+
+#song-container {
+  margin-top: 20px;
+}
+
+/* Create custom button design */
+
+.button {
+    background-color: rgba(77, 44, 138, 1);
+    border: rgba(52, 26, 101, 1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size:20px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.button-2 {
+    background-color: rgba(77, 44, 138, 1);
+    border: rgba(52, 26, 101, 1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size:14px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+/* From W3 Schools - Create columns and rows to more easily format elements on page */
+/* Column-main is for main page and Column-photo is for image gallery page */
+
+.column-main {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-photo {
+    float: left;
+    width: 33.33%;
+}
+
+.column-photo img {
+    height: 120px;
+    width: 150px;
+}
+
+/* Create a card class for stylizing organized elements */
+
+.card {
+    background-color: snow;
+    box-shadow: 0 3px 6px 0 rgba(239, 239, 239, 1);
+    transition: 0.5s;
+    border-radius: 1px;
+}
+
+.card-body{
+    padding: 4px 16px;
+}
+
+/* Resize img photos with proportionality */
+
+.img {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+}
+
+/* Resize images to a small size without a border (logos) */
+
+.logo {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+
+    border-style: none;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+/* Background color for entire page */
+
+body {
+    background-color: rgba(154, 207, 207, 1);
+}
+
+/* Center align forms */
+
+form {
+    margin: 0 auto;
+    width: 300px;
+
+    padding: 20px 20px 40px 20px;
+    
+}
+
+/* Add border around image */
+
+img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightslategray;
+}
+
+/* From W3 Schools - How to create a Navigation Bar using lists */
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    display: block;
+    font-family: Verdana;
+    font-size:20px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(52, 26, 101, 1);
+}
+
+/* Change font for entire page */
+
+span {
+    font-family: Verdana;
+}
+
+/* From W3 Schools - How to create a Navigation Bar using lists */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(77, 44, 138, 1);
 }
