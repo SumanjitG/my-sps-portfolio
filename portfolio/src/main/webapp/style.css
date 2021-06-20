@@ -38,6 +38,18 @@
     text-align: center;
 }
 
+.button-3 {
+    background-color: rgba(77, 44, 138, 1);
+    border: rgba(52, 26, 101, 1);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size:12px;
+    padding: 12px 22px;
+    text-align: center;
+}
+
 /* From W3 Schools - Create columns and rows to more easily format elements on page */
 /* Column-main is for main page and Column-photo is for image gallery page */
 

@@ -124,7 +124,4 @@ function translateText() {
         .then((translatedMessage) => {
             translatedMessageContainer.innerText = translatedMessage;
         });
-
-    console.log(message);
-    console.log(translatedMessage);
 }
