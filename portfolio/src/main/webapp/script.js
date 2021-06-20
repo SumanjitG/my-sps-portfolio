@@ -94,7 +94,7 @@ function addRandomMusicRecommendation() {
     songYT.setAttribute("frameborder", "0");
     songYT.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
     songYT.setAttribute("allowfullscreen", "true");
-    
+
     songContainer.appendChild(songYT);
 }
 
