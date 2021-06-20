@@ -56,7 +56,7 @@ function addRandomMusicRecommendation() {
         artistName: 'Selena Gomez',
         songAlbum: 'Revelación',
         yearReleased: '2021',
-        youtubeLinkToSong: 'https://www.youtube.com/embed/9H_368c2Hzw'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/r6pHsnGtwOA'
     },
     {
         songTitle: 'Call My Friends',
@@ -70,7 +70,21 @@ function addRandomMusicRecommendation() {
         artistName: 'Ariana Grande',
         songAlbum: 'positions',
         yearReleased: '2020',
-        youtubeLinkToSong: 'https://www.youtube.com/embed/Sujm6756pZU'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/apeXKjfP_yE'
+    },
+    {
+        songTitle: 'Pretty Savage',
+        artistName: 'Blackpink',
+        songAlbum: 'The Album',
+        yearReleased: '2020',
+        youtubeLinkToSong: 'https://www.youtube.com/embed/F8c8f2nK82w'
+    },
+    {
+        songTitle: 'Cardigan',
+        artistName: 'Taylor Swift',
+        songAlbum: 'Folklore',
+        yearReleased: '2020',
+        youtubeLinkToSong: 'https://www.youtube.com/embed/A4CVcQz0PuQ'
     }];
 
     // Pick a random song object
