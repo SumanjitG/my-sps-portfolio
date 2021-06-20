@@ -5,6 +5,6 @@ async function showRandomFact() {
 
     const factContainer = document.getElementById('fact-container');
     const fact = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
-    
+
     factContainer.innerText = fact;
 }

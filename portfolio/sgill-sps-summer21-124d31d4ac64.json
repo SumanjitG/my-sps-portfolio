@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "sgill-sps-summer21",
+    "private_key_id": "124d31d4ac64929d88744368d022a87cf7e4a7ad",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCywCFwTP3IZ/0W\noUhfKu2rkq8dU6f5rfYdTnXU/EV7kioZhTwRyZeHn2IXa6lvWxAMYHJG/WkGTlni\nHPet308IYRL6tWYV+a2gJoyhRE4XJnybI8r1ZedQyZkJNsR1iXZH1dgHnF69Nk1H\n1XKX5R0dlhvziXsf4y4pZRf13kcrQ40xROCpjQEfu8jjqeXiTZLjiCfp4cfRkF+i\nCgOWI1RGRTvkDf2947sl45YYkHsrnGSuD9UT6iXIaqe53glJaD0DG1U4ow63h8XO\n37k1h+fXbmkNhZ/3jWU7b5CQzOBJ04ryfmV9pAIAd9PE/u0dwnvc6V2kWg2eS6qL\ntgTP76BJAgMBAAECggEAAq0rtawMyD4zXPjXAIggD9Jl/Bh4sp1ogB2WGCrF/7t2\nFSn91rktTfREsnD+nq/ZvzUHUllgw/2ywkGYsqIozila8K/8OnPBu2ecXIf36zLn\nXnt5l7VPXSdZmuNWq3kJO/qKGKoTxT2YXbfG1pqmq2mIG1xJgKDvkTfbP8eUtU4l\nYiIoBGef0aebjwdqZIMTvGdk4f2LEyPYD5ZFV0cZutCEdFWl+Rd50b5fCHShOzPr\ngcAYHoTyJufZzf2drmOszEUhqzGKcIA2bZhs7/GUz3ttjPpbbw5d6anDMwoCMsdT\nmHy+Bp4S563Z0cTD5jxifA/9SOgzWKVkjdQhxWSS4QKBgQDybkRVtF2SEiaQTjvh\nEzZTuuvCCkr6VLvl6g9Xn4ET3lBC+ocjKXEy6elCGU40fQSBwwT0Qtx3bH/ptm9e\nxxbH4LSWRlfpqyp0pICfBatEESh1G8Oz2halgoUhEnekBz9k0+SipBOoSH8yndif\nr5RP/WwplAdRM5N4ompYYp3YaQKBgQC8wWed2ERHSzaeLATZmQUz96w527H189AQ\nbYfhnbXkSz0y3cg2DcJlTlTCgOVVBQ66YgKj3xHVDTTU8nEAcjPt3wlVf51MXX3I\nWeELgMjNBUShCp6bXM/hYQS7vn+ybeZvaQxZetPLCbOPzklsVWYP15UdIh8JjA+M\ndIkeFqOM4QKBgQC4KmArI1u57aPyGByQ/UFWFjenLp6K0Pf0zvxcukUaTNZ4K02h\nvofJ/7w9hG/Om/JiiT4oOOq2pmv9paOxQljh+qf1SPbcAjW8aoNzSqEykj5DyJXA\n+Toe/aoY16ifqQnVlMqpay+rtXc7goHfvUhUA9a5N0TfwOiUyf0zq6bxkQKBgAXx\n0WGXPg9AvyecG0r/FrrcQgBQevpUA2mBCZaBcQkPlY3UjkmlhUnLfb/ib1aOIjic\nfZjLnbQoBlHukMCC2D/VlmWq7zlIeH2m1v+Vvr02PUMVIomiEqn2dD+1cDAeZfN8\nS3dF9wWd+Jm+1XEj/2LgV0HjoTabwqGZyfe4ns4BAoGARIbpdCEWUP0jR7iwfuSq\n4PudpttZCRICpgUSuFs0fH/vNIgJKDWCOpXFnjl3u5yDMkHblOdzYJjGRg/JY+ju\n0M46yF9hv+IyZVEjIFAv+WcvhEcQXW1/JNeqszNjom6Sv0rcWeDZoDNicSCvbrdM\ne1Dz+EzeftlTusvOXVA+H08=\n-----END PRIVATE KEY-----\n",
+    "client_email": "sgill-translation@sgill-sps-summer21.iam.gserviceaccount.com",
+    "client_id": "109336456057448722752",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sgill-translation%40sgill-sps-summer21.iam.gserviceaccount.com"
+}
