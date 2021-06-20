@@ -27,7 +27,7 @@ function addRandomATLAQuote() {
             '"If a fish lives its whole life in this river, does he know the river\'s destiny? No! Only that it runs on and on, out of his control. He may follow where it flows, but he cannot see the end. He cannot imagine the ocean." - Jeong Jeong'];
 
     // Pick a random quote.
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+    const quote = getRandomElement(quotes);
 
     // Add it to the page.
     const quoteContainer = document.getElementById('quote-container');
@@ -78,9 +78,8 @@ function addRandomMusicRecommendation() {
         youtubeLinkToSong: 'https://www.youtube.com/watch?v=Sujm6756pZU'
     }];
 
-    // Pick a random song index and access a song object
-    const songIndex = Math.floor(Math.random() * songs.length);
-    const song = songs[songIndex];
+    // Pick a random song object
+    const song = getRandomElement(songs);
 
     // Add song to page
     const songContainer = document.getElementById('song-container');
@@ -97,7 +96,7 @@ function addRandomMusicRecommendation() {
     chosenSong.setAttribute("height", "250");
     chosenSong.setAttribute("align", "center");
 
-    console.log(song.albumCoverURL);
+    //console.log(song.albumCoverURL);
 
     // Connect YouTube link to image and add into page
     songLink.setAttribute("href", song.youtubeLinkToSong);
@@ -124,4 +123,19 @@ function translateText() {
         .then((translatedMessage) => {
             translatedMessageContainer.innerText = translatedMessage;
         });
+}
+
+/** Fetches a random fact from the server */
+async function showRandomFact() {
+    const responseFromServer = await fetch('/fact');
+    const textFromResponse = await responseFromServer.json();
+
+    const factContainer = document.getElementById('fact-container');
+    const fact = getRandomElement(textFromResponse);
+
+    factContainer.innerText = fact;
+}
+
+function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
