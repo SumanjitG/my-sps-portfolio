@@ -42,40 +42,35 @@ function addRandomMusicRecommendation() {
         artistName: 'Kali Uchis',
         songAlbum: 'Sin Miedo (del Amor y Otros Demonios)',
         yearReleased: '2020',
-        albumCoverURL: '/images/telepatia.jpg',
-        youtubeLinkToSong: 'https://www.youtube.com/watch?v=Dwzk-XZxZ4k'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/Dwzk-XZxZ4k'
     },
     {
         songTitle: 'She',
         artistName: 'Harry Styles',
         songAlbum: 'Fine Line',
         yearReleased: '2019',
-        albumCoverURL: '/images/She.jpg',
-        youtubeLinkToSong: 'https://www.youtube.com/watch?v=zQ3PeDGswz4'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/zQ3PeDGswz4'
     },
     {
         songTitle: 'Adiós',
         artistName: 'Selena Gomez',
         songAlbum: 'Revelación',
         yearReleased: '2021',
-        albumCoverURL: '/images/Adios.png',
-        youtubeLinkToSong: 'https://www.youtube.com/watch?v=9H_368c2Hzw'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/9H_368c2Hzw'
     },
     {
         songTitle: 'Call My Friends',
         artistName: 'Shawn Mendes',
         songAlbum: 'Wonder',
         yearReleased: '2020',
-        albumCoverURL: '/images/CallMyFriends.JPG',
-        youtubeLinkToSong: 'https://www.youtube.com/watch?v=rpFjfpBZ-qA'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/rpFjfpBZ-qA'
     },
     {
         songTitle: 'my hair',
         artistName: 'Ariana Grande',
         songAlbum: 'positions',
         yearReleased: '2020',
-        albumCoverURL: '/images/MyHair.JPG',
-        youtubeLinkToSong: 'https://www.youtube.com/watch?v=Sujm6756pZU'
+        youtubeLinkToSong: 'https://www.youtube.com/embed/Sujm6756pZU'
     }];
 
     // Pick a random song object
@@ -86,23 +81,21 @@ function addRandomMusicRecommendation() {
 
     songContainer.innerText = '\n"' + song.songTitle + '" - ' + song.artistName + '\n'
         + song.songAlbum + ' (' + song.yearReleased + ')' + '\n\n'
-        + 'To listen to the song on YouTube, click the photo of the song below!\n\n';
+        + 'To give the song a listen, click the video below!\n\n';
 
-    var chosenSong = document.createElement("img");
-    var songLink = document.createElement("a");
 
-    chosenSong.setAttribute("src", song.albumCoverURL);
-    chosenSong.setAttribute("width", "250");
-    chosenSong.setAttribute("height", "250");
-    chosenSong.setAttribute("align", "center");
+    // Create an iframe element to embed the YouTube video into the portfolio page    
+    var songYT = document.createElement("iframe");
 
-    //console.log(song.albumCoverURL);
-
-    // Connect YouTube link to image and add into page
-    songLink.setAttribute("href", song.youtubeLinkToSong);
-    songLink.appendChild(chosenSong);
-
-    songContainer.appendChild(songLink);
+    songYT.setAttribute("width", "560");
+    songYT.setAttribute("height", "315");
+    songYT.setAttribute("src", song.youtubeLinkToSong);
+    songYT.setAttribute("title", "YouTube video player");
+    songYT.setAttribute("frameborder", "0");
+    songYT.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    songYT.setAttribute("allowfullscreen", "true");
+    
+    songContainer.appendChild(songYT);
 }
 
 function translateText() {
