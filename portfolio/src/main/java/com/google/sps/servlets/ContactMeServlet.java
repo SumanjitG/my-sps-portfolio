@@ -21,15 +21,16 @@ public class ContactMeServlet extends HttpServlet {
         // Get the user's message
         String messageValue = request.getParameter("message");
 
+        String responseMessage = "You submitted: \n Name: " + nameValue + "\n Email: " + emailValue + "\n Message: "
+                + messageValue;
+
         // Print the values so you can see it in the server logs.
-        System.out.println(
-                "You submitted: \n Name: " + nameValue + "\n Email: " + emailValue + "\n Message: " + messageValue);
+        System.out.println(responseMessage);
 
         // Write the value to the response so the user can see it.
-        response.getWriter().println(
-            "You submitted: \n Name: " + nameValue + "\n Email: " + emailValue + "\n Message: " + messageValue + "\n\n\nRedirecting...");
+        response.getWriter().println(responseMessage + "\n\n Redirecting...");
 
         // Add a delay before redirecting to the home page
         response.setHeader("Refresh", "5; URL = http://sgill-sps-summer21.appspot.com/");
-  }
+    }
 }

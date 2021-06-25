@@ -1,86 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <span>
-  <body>
-    
-    <div id="content" class = "card">
-        <div class = "card-body">
+</head>
+<span>
 
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="facts.html">Facts</a></li>
-                <li><a href="images.html">Gallery</a></li>
-                <li><a href="music.html">Songs</a></li>
-            </ul>
+    <body>
 
-            <h1>Welcome to my Portfolio!</h1>
-            <h3>About Me:</h3>
+        <div id="content" class="card">
+            <div class="card-body">
 
-            <div class = "row">
-                <div class = "column-main">
-                    <img class = "img" src="/images/SG.jpeg" alt = "Sumanjit Gill"/>
-                </div>
-                <div class = "column-main">
-                    <p>
-                        My name is Sumanjit Gill and I am a third-year Computer Engineering student attending CSU Fresno. 
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="images.html">Gallery</a></li>
+                    <li><a href="music.html">Songs</a></li>
+                </ul>
+                <h1>Welcome to my Portfolio!</h1>
+                <h3>About Me:</h3>
+
+                <div class="row">
+                    <div class="column-main">
+                        <img class="img" src="/images/SG.jpeg" alt="Sumanjit Gill" />
+                    </div>
+                    <div class="column-main">
+                        <p>
+                            My name is Sumanjit Gill and I am a third-year Computer Engineering student attending CSU
+                            Fresno.
+                            <br><br>
+                            I enjoy any activity involving creativity, be it drawing, photography, video editing,
+                            animation, or programming.
+                        </p>
+
                         <br>
-                        I enjoy any activity involving creativity, be it drawing, photography, video editing, animation, or programming.
-                    </p>
+
+                    </div>
                 </div>
-            </div>
 
-            <p>Click below for a quote from <i>Avatar: The Last Airbender!</i></p>
-            <button class = "button" onclick="addRandomATLAQuote()">Quote Me!</button>
-            <div id="quote-container"></div>
+                <p>Click below for a quote from <i>Avatar: The Last Airbender!</i></p>
+                <button class="button" onclick="addRandomATLAQuote()">Quote Me!</button>
+                <div id="quote-container"></div>
 
-            <br>
+                <br>
 
-            <div class = "row">
-                <b><h4>Contact Me:</h4></b>
-                    <div class = "column-main">
+                <div class="row">
+                    <b>
+                        <h4>Contact Me:</h4>
+                    </b>
+                    <div class="column-main">
                         <form action="/contact" method="POST">
-                            <label for = "name">Name</label>
+                            <label for="name">Name</label>
                             <br>
-                            <input type = "text" id="name" name = "name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                             <br><br>
 
-                            <label for = "email">Email</label>
+                            <label for="email">Email</label>
                             <br>
-                            <input type = "text" id="email" name = "email" placeholder="Your Email" required>
+                            <input type="text" id="email" name="email" placeholder="Your Email" required>
                             <br><br>
 
-                            <label for = "message">Message</label>
+                            <label for="message">Message</label>
                             <br>
-                            <input type = "text" id="message" name = "message" placeholder="Your Message" required>
+                            <input type="text" id="message" name="message" placeholder="Your Message" required>
                             <br><br>
-                            <br/>
-                            <input type="submit"/>
+                            <br />
+                            <input type="submit" />
                         </form>
                     </div>
 
-                    <div class = "column-main">
+                    <div class="column-main">
 
                         <br><br>
-                        
-                        <a href = "https://github.com/SumanjitG/"><img class = "logo" src="/images/git.png" alt = "GitHub"/></a>
-                    
+
+                        <a href="https://github.com/SumanjitG/"><img class="logo" src="/images/git.png"
+                                alt="GitHub" /></a>
+
                         <br><br>
-                    
-                        <a href = "https://www.linkedin.com/in/sumanjit-gill/"><img class = "logo" src="/images/linkedin.png" alt = "LinkedIn"/></a>                
+
+                        <a href="https://www.linkedin.com/in/sumanjit-gill/"><img class="logo"
+                                src="/images/linkedin.png" alt="LinkedIn" /></a>
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="column-main">
+                        <p style="font-size:13px;">If you wish to translate a message, type into the box below, select a
+                            language from the drop-down, and click translate!</p>
+
+                        <textarea id="translate-message"></textarea>
+                        <br>
+                        <select id="language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="ar">Arabic</option>
+                            <option value="pa">Punjabi</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                        </select>
+
+                        <button class="button-3" onclick=translateText()>Translate</button>
+                    </div>
+
+                    <div class="column-main">
+                        <div id="translated-message-container" style="font-size:13px;"> Translation: <br><br></div>
+                    </div>
+                </div>
                 <br><br>
 
+            </div>
         </div>
-    </div>
-  </body> 
+    </body>
 </span>
+
 </html>
