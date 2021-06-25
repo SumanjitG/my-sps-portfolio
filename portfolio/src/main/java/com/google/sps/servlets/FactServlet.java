@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 
 /**
- * Handles requests sent to the /hello URL. Try running a server and navigating
+ * Handles requests sent to the /fact URL. Try running a server and navigating
  * to /fact!
  */
 @WebServlet("/fact")

@@ -71,27 +71,6 @@
                             <br />
                             <input type="submit" />
                         </form>
-
-
-                        <p style="font-size:13px;">If you wish to translate your message from the contact form, select a
-                            language from the drop-down and
-                            click
-                            translate!</p>
-                        <select id="language">
-                            <option value="es">English</option>
-                            <option value="es">Spanish</option>
-                            <option value="fr">French</option>
-                            <option value="ar">Arabic</option>
-                            <option value="pa">Punjabi</option>
-                            <option value="zh">Chinese</option>
-                            <option value="ja">Japanese</option>
-                        </select>
-
-                        <button class="button-3" onclick=translateText()>Translate</button>
-
-                        <hr />
-
-                        <div id="translated-message-container"></div>
                     </div>
 
                     <div class="column-main">
@@ -108,6 +87,30 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="column-main">
+                        <p style="font-size:13px;">If you wish to translate a message, type into the box below, select a
+                            language from the drop-down, and click translate!</p>
+
+                        <textarea id="translate-message"></textarea>
+                        <br>
+                        <select id="language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="ar">Arabic</option>
+                            <option value="pa">Punjabi</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                        </select>
+
+                        <button class="button-3" onclick=translateText()>Translate</button>
+                    </div>
+
+                    <div class="column-main">
+                        <div id="translated-message-container" style="font-size:13px;"> Translation: <br><br></div>
+                    </div>
+                </div>
                 <br><br>
 
             </div>

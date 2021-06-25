@@ -113,7 +113,7 @@ function addRandomMusicRecommendation() {
 }
 
 function translateText() {
-    const message = document.getElementById('message').value;
+    const message = document.getElementById('translate-message').value;
     const languageCode = document.getElementById('language').value;
 
     const translatedMessageContainer = document.getElementById('translated-message-container');
